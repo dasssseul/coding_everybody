@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a{
+        font-size: 3rem;
+        display: inline-block;
+        /* 장면 전환 효과 */
+        /* transition-property: font-size transform;
+        transition-duration: 1s; */
+
+        /* 모든 속성의 변화에 대해서 1초동안 변화한다 */
+        transition: font-size 1s, transform 0.1s;
+        transition-delay:0.5s;
+      }
+      /* 마우스로 클릭했을 때 */
+      a:active{
+        transform:translate(20px, 20px);
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Click</a>
+  </body>
+</html>
