@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 동등 연산자(equal operator) '=='
+        alert(1==2);
+        alert(2==2);
+        alert("one" == "one");
+
+        // 일치 연산자(strict equal operator) '==='
+        alert(1 === "1"); // False
+        alert(1 == "1"); // True
+        // 일치 연산자는 정보와 데이터 타입이 모두 동일할 때 같은 값으로 인정
+        // 동등 연산자는 정보만 같아도 같은 값으로 인정
+
+        // null은 값이 없음을 의도한 것, undefined는 그냥 값이 없는 상태
+        alert(null == undefined); // True
+        alert(null === undefined); // False
+        alert(True == 1); // True
+        alert(True === 1); // False
+        alert(0 === -0); // True
+        alert(NaN === NaN) // False
+
+        // 따라서, === 연산자를 쓰는 것을 강력하게 권한다
+
+    </script>
+</body>
+</html>
