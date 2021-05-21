@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+    </title>
+</head>
+<body>
+    <ul>
+        <li>egoing</li>
+        <li>daseul</li>
+        <li>jay</li>
+    </ul>
+    <script type="text/javascript">
+        // 객체의 생성
+        var grades = {'egoing': 10, 'daseul': 6, 'jay': 80};
+        document.write(grades['daseul']);
+        document.write(grades.daseul);
+
+        // 객체와 반복문의 결합
+        for (key in grades){
+            document.write("<li>key : "+key+" value : "+ grades[key]);
+        }
+        
+        // 하나의 객체 안에 서로 연관된 리스트와 함수를 그룹핑할 수 있다 => 객체지향프로그래밍!
+        var grades2 = {
+            'list' : {'egoing': 10, 'daseul': 6, 'jay': 80},
+            'show' : function(){
+                // this => 함수가 소속되어있는 객체(grades2)를 가르킨다.
+                for(var name in this.list){
+                    document.write(name, this.list[name]);
+                }
+            }
+        }
+        grades2.show();
+    </script>
+
+</body>
+</html>
