@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li class="active">JavaScript</li>
+    </ul>
+    <script>
+        // getElementsByClassName은 class 속성의 값을 기준으로 객체 조회 
+        var lis = document.getElementsByClassName('active');
+        for(var i = 0; i < lis.length; i++){
+            lis[i].style.color='red'
+        }
+    </script>
+</body>
+</html>

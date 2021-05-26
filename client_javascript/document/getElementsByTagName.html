@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <script>
+        // getElementsByTagName은 인자로 전달된 태그명에 해당하는 객체들을 찾아서
+        // 그 리스트를 nodelist라는 유사 배열에 담아서 반환한다
+        var ul = document.getElementsByTagName('ul')[0];
+        var lis = ul.getElementsByTagName('li');
+        for(var i = 0; i < lis.length; i++){
+            lis[i].style.color = 'red';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol>
+            <li>HTML</li>
+            <li class="active">CSS</li>
+            <li class="active">JavaScript</li>
+        </ol>
+        <script>
+            // querySelector는 li에 해당하는 첫번째 객체만 배열로 가져오는 메서드
+            var li = document.querySelector('li');
+            li.style.color = 'red';
+            // querySelectorAll은 특정 선택자를 가진 모든 요소를 배열로 가져오는 메서드
+            var lis = document.querySelectorAll('.active');
+            for( var i = 0; i < lis.length; i++){
+                lis[i].style.color = 'blue';
+            }
+        </script>
+    </body>
+</html>
